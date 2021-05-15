@@ -1,0 +1,79 @@
+.more{
+	font-size: 30px;
+}
+
+.social{
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	padding: 10px 10px;
+}
+
+.visit{
+	margin-top: 0.8%;
+}
+
+.icon-btn{
+	width: 40px;
+	height: 40px;
+	border: 0;
+	color: #000000;
+	border-radius: 50%;
+	margin: 10px 30px 10px 30px;
+	font-size: 25px;
+	transition: 0.2s;
+}
+
+.icon-btn:hover{
+	transform: scale(1.30);
+}
+
+.icon-btn a{
+	cursor: pointer;
+	color: inherit;
+}
+
+.twitch{
+	color: #9147FE;
+}
+
+.twitch:hover{
+	color: #FFFFFF;
+	background-color: #9147FE;
+}
+
+.youtube{
+	color: #FF0000;
+}
+
+.youtube:hover{
+	color: #FFFFFF;
+	background-color: #FF0000;
+}
+
+.twitter{
+	color: #4099FF;
+}
+
+.twitter:hover{
+	color: #FFFFFF;
+	background-color: #4099FF;
+}
+
+.facebook{
+	color: #3B5998;
+}
+
+.facebook:hover{
+	color: #FFFFFF;
+	background-color: #3B5998;
+}
+
+.instagram{
+	color: #5C3D2E;
+}
+
+.instagram:hover{
+	color: #FFFFFF;
+	background-color: #5C3D2E;
+}
