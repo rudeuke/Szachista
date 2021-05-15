@@ -1,7 +1,7 @@
-# Szachista-Technologie-Internetowe
+# Szachista
 Projekt strony, Technologie Internetowe, semestr 4
 
-Strona w budowie, póki co tylko html + css
+Podstawowa strona html+css. Projekt w budowie.
 
 domena:
 https://szachista.bkukul.technology/
