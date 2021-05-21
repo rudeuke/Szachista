@@ -6,7 +6,7 @@
 .imagebox{
 	height: 50vh;
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.75rem;
 }
 
 .gallery img{
@@ -28,5 +28,17 @@
 		opacity: 1;
 		filter: grayscale(0);
 		transform: scale(1.08);
+	}
+}
+
+@media (max-width: 1200px){
+	.imagebox{
+		font-size: 1.7rem;
+	}
+}
+
+@media (max-width: 760px){
+	.imagebox{
+		font-size: 1.5rem;
 	}
 }
