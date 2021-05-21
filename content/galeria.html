@@ -4,24 +4,24 @@
 		<title>Szachista.pl</title>
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="styles/flexbox.css">
-		<link rel="stylesheet" type="text/css" href="styles/grid.css">
-		<link rel="stylesheet" type="text/css" href="styles/jumbotron.css">
-		<link rel="stylesheet" type="text/css" href="styles/main.css">
-		<link rel="stylesheet" type="text/css" href="styles/navigation.css">
-		<link rel="stylesheet" type="text/css" href="styles/scrollbar.css">
-		<link rel="stylesheet" type="text/css" href="styles/socials.css">
+        <link rel="stylesheet" type="text/css" href="../styles/flexbox.css">
+		<link rel="stylesheet" type="text/css" href="../styles/gallery.css">
+		<link rel="stylesheet" type="text/css" href="../styles/grid.css">
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../styles/navigation.css">
+		<link rel="stylesheet" type="text/css" href="../styles/scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../styles/socials.css">
 	</head>
 
 
 	<body>
-
-
+	
+		
 		<header class="header">
 			<div class="flex-container">
 
 				<div class="flex-item-30">
-					<h1 class="headmain"><a href="index.html">Szachista.pl</a></h1>
+					<h1 class="headmain"><a href="../index.html">Szachista.pl</a></h1>
 				</div>
 
 				<div class="flex-item-60">
@@ -29,7 +29,7 @@
 				</div>
 				
 			</div>
-		</header>			
+		</header>	
 
 
 
@@ -45,7 +45,7 @@
 									<li><a href=#>Historia szachów</a></li>	
 									<li><a href=#>Reguły gry</a></li>
 									<li><a href=#>Bierki</a></li>	
-									<li><a href="content/galeria.html">Galeria</a></li>
+									<li><a href="galeria.html">Galeria</a></li>
 								</ul>
 							</li>
 						</div>
@@ -72,7 +72,7 @@
 						</div>
 
 						<div class="flex-item-center width-s-100">	
-							<li><a href="content/mistrzowie.html">Mistrzowie świata</a></li>
+							<li><a href="mistrzowie.html">Mistrzowie świata</a></li>
 						</div>	
 						
 						<div class="flex-item-center width-s-100">
@@ -89,51 +89,39 @@
 			</div>
 
 
+		
+        <!-- GALERIA NA FLEXBOXACH -->
+			<section class="flex-gallery">
 
-			<div class="flex-container flex-s-container">
-					
-				<div class="flex-item-center flex-item-60">
-					<div class="padding-horizontal-10 padding-vertical-5">
-						<h3>Nie słyszałeś o szachach?</h3>
-						<p>
-							Szachy to rodzina strategicznych gier planszowych rozgrywanych przez dwóch graczy na 64-polowej szachownicy, za pomocą zestawu bierek (pionów i figur). Popularnie, choć nieprecyzyjnie, szachami nazywa się również wspomniane bierki. Międzynarodowy Komitet Olimpijski uznaje szachy za dyscyplinę sportu. Szachy należą do gier z doskonałą informacją.<br>
-						</p>
-					</div>
-				</div>
-					
-				<div class="flex-item-center flex-item-40">
-					<div class="padding-horizontal-10 padding-vertical-5">
-						<img src="images/chess-pieces.jpg" alt="Bierki szachowe">
-					</div>
-				</div>
+                <div class="padding-vertical-5">
+                    <img src="../images/gallery/board.jpg">
+                </div>
 
-			</div>
+                <div class="padding-vertical-5">
+                    <img src="../images/gallery/chess-warriors.jpg">
+                </div>
 
+                <div class="padding-vertical-5">
+                    <img src="../images/gallery/jan-krzysztof-duda.jpg">
+                </div>
 
+                <div class="padding-vertical-5">
+                    <img src="../images/gallery/pawn-king.jpg">
+                </div>
 
-			<div class="flex-item-center">
-				<section class="jumbotron">
-					<h1>
-						Mistrzowie świata
-					</h1>
-					<a href="mistrzowie.html">
-						<button>Przeglądaj galerię</button>
-					</a>
-				</section>
-			</div>
-			
+                <div class="padding-vertical-5">
+                    <img src="../images/gallery/starting-position.jpg">
+                </div>
 
+                <div class="padding-vertical-5">
+                    <img src="../images/gallery/white-king.jpg">
+                </div>
 
-			<div class="padding-horizontal-10 padding-vertical-5">
-				<div class="video-container">
-					<iframe src="https://www.youtube.com/embed/_wwSAxs8J_U?mute=1&autoplay=1"></iframe>
-				</div>
-			</div>
-
+            </section>
 		</div>
 						
 
-		
+
 		<footer class="footer">
 			<section class="social more more-s">
 				<div class="flex-container flex-s-container">
@@ -201,6 +189,7 @@
 				</div>
 			</section>
 		</footer>
+		
 		
 		
 	</body>

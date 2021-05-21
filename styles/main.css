@@ -11,18 +11,18 @@
 
 body{
 	font-family: customFont;
-	background-image: url("../images/backgroundChess.png");
+	background-image: url("../images/background-chess.png");
 	background-color: #c2bba3;
 	margin: 0;
 	font-size: 25px;
 }
 
-.header{
+header{
 	text-align: center;
 	text-transform: uppercase;
 	background-color: #998c66;
 	color: #ffffff;
-	padding: 15px;
+	padding: 15px 0;
 	height: 3vw;
 	position: sticky;
 	top: 0;
@@ -65,13 +65,12 @@ body{
 	border-style: none;
 }
 
-.footer{
+footer{
 	background-color: #998c66;
 	color: #ffffff;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
-
 	width: 83.3%;
 	margin-left: 8.33%;
 }

@@ -17,6 +17,7 @@
 	cursor: pointer;
 }
 
+
 @media (min-width: 1281px){
 	.gallery img{
 		filter: grayscale(0.5);

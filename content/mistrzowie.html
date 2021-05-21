@@ -4,125 +4,93 @@
 		<title>Szachista.pl</title>
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="../styles/main.css">
-		<link rel="stylesheet" type="text/css" href="../styles/grid.css">
-		<link rel="stylesheet" type="text/css" href="../styles/navigation.css">
+        <link rel="stylesheet" type="text/css" href="../styles/flexbox.css">
 		<link rel="stylesheet" type="text/css" href="../styles/gallery.css">
-		<link rel="stylesheet" type="text/css" href="../styles/socials.css">
+		<link rel="stylesheet" type="text/css" href="../styles/grid.css">
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../styles/navigation.css">
 		<link rel="stylesheet" type="text/css" href="../styles/scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../styles/socials.css">
 	</head>
 
 
 	<body>
 	
-		<div class="header">
-			<div class="container">
-				<div class="row">
-					<div class="col-5 col-offset-0">
-						<h1 class="headmain"><a href="../index.html">Szachista.pl</a></h1>
-					</div>
-					<div class="col-6 col-offset-0">
-						<h1 class="headsecondary">Twój portal szachowy</h1>
-					</div>
+
+		<header class="header">
+			<div class="flex-container">
+
+				<div class="flex-item-30">
+					<h1 class="headmain"><a href="../index.html">Szachista.pl</a></h1>
 				</div>
-			</div>
-		</div>
 
-
-		<div class="content">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-offset-0">
-
-						<nav>
-							<ul>
-								
-								<li>
-									<a href=#>Szachy</a>
-									<ul>
-										<li>
-											<a href=#>Historia szachów</a>
-										</li>
-										
-										<li>
-											<a href=#>Reguły gry</a>
-										</li>
-										
-										<li>
-											<a href=#>Bierki</a>
-										</li>
-									</ul>
-								</li>
-								
-								
-								<li>
-									<a href=#>Otwarcia szachowe</a>
-									<ul>
-										<li>
-											<a href=#>Rozwój figur</a>
-										</li>
-										
-										<li>
-											<a href=#>Kontrola centrum</a>
-										</li>
-										
-										<li>
-											<a href=#>Bezpieczeństwo króla</a>
-										</li>
-										
-										<li>
-											<a href=#>Struktura pionów</a>
-										</li>
-									</ul>
-								</li>
-								
-								
-								<li>
-									<a href=#>Debiuty</a>
-									<ul>
-										<li>
-											<a href=#>Otwarte</a>
-										</li>
-										
-										<li>
-											<a href=#>Półotwarte</a>
-										</li>
-										
-										<li>
-											<a href=#>Zamknięte</a>
-										</li>
-									</ul>
-								</li>
-								
-								
-								<li>
-									<a href="jumbotron.html">Mistrzowie świata</a>
-								</li>
-								
-								
-								<li>
-									<a href=#>Szachy online</a>
-									<ul>
-										<li>
-											<a target="_blank" href="https://www.chess.com/">Chess.com</a>
-										</li>
-										
-										<li>
-											<a target="_blank" href="https://lichess.org/">lichess.org</a>
-										</li>
-									</ul>
-								</li>
-								
-							</ul>
-						</nav>
-
-					</div>
+				<div class="flex-item-60">
+					<h1 class="headsecondary">Twój portal szachowy</h1>
 				</div>
+				
 			</div>
-		</div>
-			
-			
+		</header>
+
+
+		
 		<div class="content">
+			<div class="flex-container flex-s-container flex-m-container">
+				<nav class="navigation">
+					
+					<ul class="flex-nav flex-s-container flex-m-container">
+
+						<div class="flex-item-center width-s-100">
+							<li><a href=#>Szachy</a>
+								<ul>
+									<li><a href=#>Historia szachów</a></li>	
+									<li><a href=#>Reguły gry</a></li>
+									<li><a href=#>Bierki</a></li>	
+									<li><a href="galeria.html">Galeria</a></li>
+								</ul>
+							</li>
+						</div>
+								
+						<div class="flex-item-center width-s-100">
+							<li><a href=#>Otwarcia szachowe</a>
+								<ul>
+									<li><a href=#>Rozwój figur</a></li>								
+									<li><a href=#>Kontrola centrum</a></li>										
+									<li><a href=#>Bezpieczeństwo króla</a></li>										
+									<li><a href=#>Struktura pionów</a></li>
+								</ul>
+							</li>
+						</div>
+
+						<div class="flex-item-center width-s-100">
+							<li><a href=#>Debiuty</a>
+								<ul>
+									<li><a href=#>Otwarte</a></li>									
+									<li><a href=#>Półotwarte</a></li>										
+									<li><a href=#>Zamknięte</a></li>
+								</ul>
+							</li>
+						</div>
+
+						<div class="flex-item-center width-s-100">	
+							<li><a href="mistrzowie.html">Mistrzowie świata</a></li>
+						</div>	
+						
+						<div class="flex-item-center width-s-100">
+							<li><a href=#>Szachy online</a>
+								<ul>
+									<li><a target="_blank" href="https://www.chess.com/">Chess.com</a></li>										
+									<li><a target="_blank" href="https://lichess.org/">lichess.org</a></li>
+								</ul>
+							</li>
+						</div>	
+					</ul>
+
+				</nav>
+			</div>
+
+
+
+		<!-- GALERIA NA GRIDZIE -->
 			<div class="container">
 				<section class="gallery">
 
@@ -332,26 +300,29 @@
 							</div>
 						</div>
 							
-							
 					</div>
 
 				</section>
 			</div>
 		</div>
-
 						
 			
 			
-		<div class="footer">
-			<div class="container">
-				<div class="row">
+		<footer class="footer">
+			<section class="social more more-s">
+				<div class="flex-container flex-s-container">
+					
+					<div class="flex-grow-1 flex-item-center">
 
-					<section class="social">
-						<div class="more visit col-3 col-offset-1 col-m-12 col-m-offset-0">
-							Odwiedź chess.com
+						<div>
+							Kliknij po więcej!
 						</div>
-							
-						<div class="more col-1 col-offset-1">
+
+					</div>
+
+					<div class="flex-grow-2 flex-item-center flex-spacing-even">
+
+						<div>
 							<button class="icon-btn twitch">
 								<a href="https://www.twitch.tv/chess">
 									<i class="fa fa-twitch"></i>
@@ -359,7 +330,7 @@
 							</button>
 						</div>
 							
-						<div class="more col-1 col-offset-0 col-m-offset-1">
+						<div>
 							<button class="icon-btn youtube">
 								<a href="https://www.youtube.com/chess">
 									<i class="fa fa-youtube"></i>
@@ -367,7 +338,7 @@
 							</button>
 						</div>
 		
-						<div class="more col-1 col-offset-0 col-m-offset-1">
+						<div>
 							<button class="icon-btn twitter">
 								<a href="https://twitter.com/chesscom">
 									<i class="fa fa-twitter"></i>
@@ -375,7 +346,7 @@
 							</button>
 						</div>
 
-						<div class="more col-1 col-offset-0 col-m-offset-1">
+						<div>
 							<button class="icon-btn facebook">
 								<a href="https://www.facebook.com/chess/">
 									<i class="fa fa-facebook"></i>
@@ -383,18 +354,27 @@
 							</button>
 						</div>
 							
-						<div class="more col-1 col-offset-0 col-m-offset-1">
+						<div>
 							<button class="icon-btn instagram">
 								<a href="https://www.instagram.com/wwwchesscom/">
 									<i class="fa fa-instagram"></i>
 								</a>
 							</button>
 						</div>
-					</section>
+
+					</div>
+
+					<div class="flex-grow-1 flex-item-center">
+
+						<div>
+							Odwiedź chess.com
+						</div>
+
+					</div>
 
 				</div>
-			</div>
-		</div>
+			</section>
+		</footer>
 	
 		
 	</body>
