@@ -50,66 +50,6 @@ nav li:hover ul{
 	display: block;
 }
 
-
-@media (max-width: 1199px){
-
-	.hamburger{
-		display: block;
-	}
-
-	.nav{
-		display: none;
-		position: absolute;
-		left: 0;
-		top: 100%;
-		width: 100%;
-		background-color: #a39875;
-	}
-
-	.nav-mobile{
-		flex-direction: column;
-		overflow: hidden;
-	}
-
-	nav li{
-		width: 100%;
-	}
-	
-	ul ul{
-		position: relative;
-		background-color: #ada385;
-	}
-
-	.width-s-100{
-		width: 100%;
-	}
-
-	.headmain{
-		font-size: 3vw;
-		padding-top: 0.5vw;
-	}
-}
-
-@media (max-width: 767px){
-	
-	.nav{
-		left: unset;
-		top: 85%;
-		align-items: center;
-	}
-
-	.navbar-nav li a{
-		padding-top: 15px;
-		padding-bottom: 15px;
-	}
-
-	.headmain{
-		font-size: 4.5vw;
-		padding-top: 2vw;
-	}
-}
-
-
 nav li a{
 	color: black;
 	display: inline-block;
@@ -132,4 +72,71 @@ nav li a:hover{
 	opacity: 1;
 	background-position: 0 100%;
 	background-image: linear-gradient(120deg, #c2baa3 50%, transparent 50%);
+}
+
+
+@media (max-width: 1199px){
+
+	.hamburger{
+		display: block;
+		font-size: 170%;
+	}
+
+	.nav{
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		background-color: #a39875;
+	}
+
+	.nav-mobile{
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	nav li{
+		width: 100%;
+	}
+
+	nav li a{
+		font-size: 150%;
+	}
+	
+	ul ul{
+		position: relative;
+		background-color: #ada385;
+	}
+
+	.width-s-100{
+		width: 100%;
+	}
+
+	.headmain{
+		font-size: 3vw;
+		padding-top: 0.5vw;
+	}
+}
+
+@media (max-width: 767px){
+	
+	.hamburger{
+		font-size: 200%;
+	}
+
+	.nav{
+		left: unset;
+		top: 85%;
+		align-items: center;
+	}
+
+	nav li a{
+		font-size: 200%;
+	}
+
+	.headmain{
+		font-size: 4.5vw;
+		padding-top: 2vw;
+	}
 }

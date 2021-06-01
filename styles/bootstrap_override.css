@@ -83,7 +83,7 @@ nav a{
 @media (max-width: 1199px){
 
     .carousel .item{
-        height: 30vh;
+        height: 60vh;
     }
 
     .navbar-nav li li a{
@@ -103,7 +103,7 @@ nav a{
 @media (max-width: 767px){
 
     .carousel .item{
-        height: 20vh;
+        height: 40vh;
     }
 
     .carousel-caption{
@@ -112,5 +112,10 @@ nav a{
 
     .carousel-caption h3{
         font-size: 100%;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }
