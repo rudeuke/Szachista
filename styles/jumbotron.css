@@ -36,7 +36,7 @@
 	cursor: pointer;
 }
 
-@media (min-width: 1281px){
+@media (min-width: 1200px){
 
 	.jumbotron button{
 		opacity: 0.9;

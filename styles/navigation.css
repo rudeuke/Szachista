@@ -1,16 +1,39 @@
+.headmain{
+	float: left;
+	margin: 0;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 2.2vw;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 2.8vw;
+}
+
+.hamburger{
+	display: none;
+	float: right;
+	border: none;
+	background-color: transparent;
+	font-size: 135%;
+	position: absolute;
+	right: 2%;
+	top: 0;
+}
+
 nav{
-	background-color: #ada385;
 	text-align: center;
 	width: 100%;
+	background-color: #998c66;
+	height: 3.1vw;
 }
 
 nav ul{
 	list-style-type: none;
 	padding: 0px;
+	font-size: 1.7vw;
 }
 
 nav li{
-	width: 315px;
+	width: 16vw;
 }
 
 ul ul{
@@ -28,23 +51,61 @@ nav li:hover ul{
 }
 
 
-@media (max-width: 760px){
+@media (max-width: 1199px){
+
+	.hamburger{
+		display: block;
+	}
+
+	.nav{
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		background-color: #a39875;
+	}
+
+	.nav-mobile{
+		flex-direction: column;
+		overflow: hidden;
+	}
+
 	nav li{
 		width: 100%;
 	}
 	
 	ul ul{
 		position: relative;
+		background-color: #ada385;
 	}
 
 	.width-s-100{
 		width: 100%;
 	}
+
+	.headmain{
+		font-size: 3vw;
+		padding-top: 0.5vw;
+	}
 }
 
-@media (min-width: 761px){	
-	ul ul{
-		position: absolute;
+@media (max-width: 767px){
+	
+	.nav{
+		left: unset;
+		top: 85%;
+		align-items: center;
+	}
+
+	.navbar-nav li a{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.headmain{
+		font-size: 4.5vw;
+		padding-top: 2vw;
 	}
 }
 
@@ -52,9 +113,7 @@ nav li:hover ul{
 nav li a{
 	color: black;
 	display: inline-block;
-	width: 100%;
 	height: 100%;
-	line-height: 50px;
 	padding: 0;
 	text-decoration: none;
 	font-size: 100%;
@@ -63,6 +122,10 @@ nav li a{
 	transition: 0.4s;
 	background-position: 100% 0;
 	background-size: 300%;
+}
+
+nav li li a{
+	width: 100%;
 }
 
 nav li a:hover{

@@ -11,39 +11,15 @@
 
 body{
 	font-family: customFont;
-	background-image: url("../images/background-chess.png");
+	/* background-image: url("../images/background-chess.png"); */
 	background-color: #c2bba3;
 	margin: 0;
 	font-size: 25px;
 }
 
-header{
-	text-align: center;
-	text-transform: uppercase;
-	background-color: #998c66;
-	color: #ffffff;
-	padding: 15px 0;
-	height: 3vw;
-	position: sticky;
-	top: 0;
-	z-index: 999;
-}
-
-.headmain{
-	margin: 0;
-	font-family: 'Courier New', Courier, monospace;
-	font-size: 3vw;
-}
-
-.headsecondary{
-	margin: 1% 0;
-	font-size: 1.8vw;
-}
-
 .content{
 	background-color: #b8af94;
-	width: 83.3%;
-	margin-left: 8.33%;
+	width: auto;
 }
 
 .content img{
@@ -71,15 +47,25 @@ footer{
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
-	width: 83.3%;
-	margin-left: 8.33%;
+	width: 100%;
 }
 
 h1{
 	text-align: center;
 }
 
-h1 a{
-	color: black;
-	text-decoration: none;
+
+@media (max-width: 1199px){
+
+	body{
+		font-size: 20px;
+	}
+}
+
+
+@media (max-width: 767px){
+
+	body{
+		font-size: 15px;
+	}
 }

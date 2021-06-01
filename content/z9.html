@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<title>Szachista.pl</title>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../styles/flexbox.css">
+		<link rel="stylesheet" type="text/css" href="../styles/gallery.css">
+		<link rel="stylesheet" type="text/css" href="../styles/grid.css">
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../styles/navigation.css">
+		<link rel="stylesheet" type="text/css" href="../styles/scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../styles/socials.css">
+        <link rel="stylesheet" type="text/css" href="../styles/bootstrap_override.css">
+	</head>
+
+
+	<body>
+	
+		<div class="content">
+
+			<!-- zadanie 9 -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="../index.html">Szachista.pl</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li><a href=#>Szachy</a>
+							<ul>
+								<li><a href=#>Historia szachów</a></li>	
+								<li><a href=#>Reguły gry</a></li>
+								<li><a href=#>Bierki</a></li>	
+								<li><a href="galeria.html">Galeria zad 8</a></li>
+								<li><a href="z9.html">Zadanie 9</a></li>
+							</ul>
+						</li>
+						<li><a href=#>Otwarcia szachowe</a>
+							<ul>
+								<li><a href=#>Rozwój figur</a></li>								
+								<li><a href=#>Kontrola centrum</a></li>										
+								<li><a href=#>Bezpieczeństwo króla</a></li>										
+								<li><a href=#>Struktura pionów</a></li>
+							</ul>
+						</li>
+						<li><a href=#>Debiuty</a>
+							<ul>
+								<li><a href=#>Otwarte</a></li>									
+								<li><a href=#>Półotwarte</a></li>										
+								<li><a href=#>Zamknięte</a></li>
+							</ul>
+						</li>
+						<li><a href="mistrzowie.html">Mistrzowie świata</a></li>
+					</ul>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Szukana fraza">
+						</div>
+						<button type="submit" class="btn btn-default">Wyszukaj</button>
+					</form>
+				</div>
+			</nav>
+
+			<br>
+
+            <section class="jumbotron jumbotron-bs text-center">
+                <h1>
+                    Jumbotron<br>
+					<small>podtytuł</small>
+                </h1>
+                <button type="button" class="btn-lg btn-success">Kliknij tutaj!</button>
+            </section>
+
+            <br><br>
+
+            <section>
+                <h1>
+                    Galeria
+                </h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-md-6 col-xs-12">
+                            <img class="img-responsive" alt="" src="../images/gallery/board.jpg">
+                        </div>
+                        <div class="col-3 col-md-6 col-xs-12">
+                            <img class="img-responsive" alt="" src="../images/gallery/chess-warriors.jpg">
+                        </div>
+                        <div class="col-3 col-md-6 col-xs-12">
+                            <img class="img-responsive" alt="" src="../images/gallery/jan-krzysztof-duda.jpg">
+                        </div>
+                        <div class="col-3 col-md-6 col-xs-12">
+                            <img class="img-responsive" alt="" src="../images/gallery/pawn-king.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <br><br>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-md-10 col-xs-10 col-offset-1 col-md-offset-1 col-xs-offset-1">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Punkty rankingu</th>
+                                    <th>Nazwisko</th>
+                                    <th>Rok urodzenia</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2847</td>
+                                    <td>Carlsen</td>
+                                    <td>1990</td>
+                                </tr>
+                                <tr>
+                                    <td>2820</td>
+                                    <td>Caruana</td>
+                                    <td>1992</td>
+                                </tr>
+                                <tr>
+                                    <td>2799</td>
+                                    <td>Ding</td>
+                                    <td>1992</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+			<section>
+				<h1>
+                    Galeria thumbnail
+                </h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 col-md-4 col-xs-12 col-offset-1 col-md-offset-1">
+                            <img class="img-responsive img-thumbnail" alt="" src="../images/gallery/board.jpg">
+                        </div>
+                        <div class="col-4 col-md-4 col-xs-12 col-offset-2 col-md-offset-2">
+                            <img class="img-responsive img-thumbnail" alt="" src="../images/gallery/chess-warriors.jpg">
+                        </div>
+                        <div class="col-4 col-md-4 col-xs-12 col-offset-1 col-md-offset-1">
+                            <img class="img-responsive img-thumbnail" alt="" src="../images/gallery/jan-krzysztof-duda.jpg">
+                        </div>
+                        <div class="col-4 col-md-4 col-xs-12 col-offset-2 col-md-offset-2">
+                            <img class="img-responsive img-thumbnail" alt="" src="../images/gallery/pawn-king.jpg">
+                        </div>
+                    </div>
+					<div class="row text-center text-lg-left">
+                </div>					
+			</section>
+
+			<br><br>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-md-10 col-xs-10 col-offset-1 col-md-offset-1 col-xs-offset-1">
+                        <h2 class="text-center">Formularz kontaktowy</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="email">E-mail:</label><br>
+                                <input type="email" id="email" class="form-control" placeholder="jan.kowalski@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="surname">Nazwisko:</label><br>
+                                <input type="text" id="surname" class="form-control" placeholder="Kowalski" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Twoja wiadomość:</label><br>
+                                <textarea name="message" id="message" class="form-control" placeholder="Tekst wiadomości" rows="5" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <input type="submit" class="btn btn-primary" value="Wyślij">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+            <br><br>
+
+			<div class="container">
+                <div class="row">
+                    <div class="col-10 col-md-10 col-xs-10 col-offset-1 col-md-offset-1 col-xs-offset-1">
+						<div class="media">
+							<div class="media-left">
+								<img src="../images/gallery/white-king.jpg" class="media-object " alt="">
+							</div>
+							<div class="media-body">
+								<h2 class="media-heading">Rozwój szachów</h2>
+								<p>W drugiej połowie XX wieku można już było zagrać w szachy z komputerem, a później również poprzez Internet. W dniu 13 sierpnia 2008 roku rozegrano pierwszą partię szachową pomiędzy szachistą przebywającym w przestrzeni kosmicznej oraz jego kolegami na Ziemi. Partia ta zakończyła się zwycięstwem pracującego na Międzynarodowej Stacji Kosmicznej amerykańskiego astronauty Grega Chamitoffa.</p>
+							</div>
+						</div> 
+                    </div>
+				</div>
+			</div>
+
+			<br>
+		</div>
+						
+
+
+		<footer class="footer">
+			<section class="social more more-s">
+				<div class="flex-container flex-s-container">
+					
+					<div class="flex-grow-1 flex-item-center">
+
+						<div>
+							Kliknij po więcej!
+						</div>
+
+					</div>
+
+					<div class="flex-grow-2 flex-item-center flex-spacing-even">
+
+						<div>
+							<button class="icon-btn twitch">
+								<a href="https://www.twitch.tv/chess">
+									<i class="fa fa-twitch"></i>
+								</a>
+							</button>
+						</div>
+							
+						<div>
+							<button class="icon-btn youtube">
+								<a href="https://www.youtube.com/chess">
+									<i class="fa fa-youtube"></i>
+								</a>							
+							</button>
+						</div>
+		
+						<div>
+							<button class="icon-btn twitter">
+								<a href="https://twitter.com/chesscom">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</button>
+						</div>
+
+						<div>
+							<button class="icon-btn facebook">
+								<a href="https://www.facebook.com/chess/">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</button>
+						</div>
+							
+						<div>
+							<button class="icon-btn instagram">
+								<a href="https://www.instagram.com/wwwchesscom/">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</button>
+						</div>
+
+					</div>
+
+					<div class="flex-grow-1 flex-item-center">
+
+						<div>
+							Odwiedź chess.com
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+		</footer>
+		
+		
+		
+	</body>
+
+</html>

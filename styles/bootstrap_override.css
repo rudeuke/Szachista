@@ -1,0 +1,116 @@
+.content{
+    padding-top: 5vh;
+}
+
+.jumbotron-bs{
+    background-image: url("../images/background-pattern.jpg");
+    background-size: cover;
+	background-position: center;
+}
+
+.jumbotron a{
+    text-decoration: none;
+    color: black;
+}
+
+.img-thumbnail{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.media-left img {
+    width: 150px;
+}
+
+nav a{
+    color: black!important;
+    text-decoration: none!important;
+}
+
+.navbar{
+    background-color: #998c66;
+}
+
+.navbar-header{
+    padding-left: 1%;
+    padding-top: 0.35vw;
+    margin: 0;
+}
+
+.navbar-nav li a{
+    line-height: 1.58vw;
+}
+
+.navbar-nav li li a{
+    line-height: 2.48vw;
+}
+
+.carousel-caption{
+    color: black;
+    text-shadow: none;
+}
+
+.carousel-indicators li{
+    border: 1px solid black;
+}
+
+.carousel-indicators .active{
+    background-color: black;
+}
+
+.carousel-inner > .item > img {
+    position: absolute;
+    bottom: 0;
+}
+
+
+@media (min-width: 1200px){
+    
+    .carousel .item{
+        height: 70vh;
+    }
+
+    .carousel-caption{
+        font-size: 200%;
+    }
+
+    .carousel-caption h3{
+        font-size: 200%;
+    }
+}
+
+
+@media (max-width: 1199px){
+
+    .carousel .item{
+        height: 30vh;
+    }
+
+    .navbar-nav li li a{
+        line-height: 5vw;
+    }
+
+    .carousel-caption{
+        font-size: 150%;
+    }
+
+    .carousel-caption h3{
+        font-size: 150%;
+    }
+}
+
+
+@media (max-width: 767px){
+
+    .carousel .item{
+        height: 20vh;
+    }
+
+    .carousel-caption{
+        font-size: 100%;
+    }
+
+    .carousel-caption h3{
+        font-size: 100%;
+    }
+}

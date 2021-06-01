@@ -3,6 +3,7 @@
 	<head>
 		<title>Szachista.pl</title>
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../styles/flexbox.css">
 		<link rel="stylesheet" type="text/css" href="../styles/gallery.css">
@@ -11,84 +12,78 @@
 		<link rel="stylesheet" type="text/css" href="../styles/navigation.css">
 		<link rel="stylesheet" type="text/css" href="../styles/scrollbar.css">
 		<link rel="stylesheet" type="text/css" href="../styles/socials.css">
+		<link rel="stylesheet" type="text/css" href="../styles/bootstrap_override.css">
 	</head>
 
 
 	<body>
 	
-		
-		<header class="header">
-			<div class="flex-container">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
 
-				<div class="flex-item-30">
-					<h1 class="headmain"><a href="../index.html">Szachista.pl</a></h1>
-				</div>
-
-				<div class="flex-item-60">
-					<h1 class="headsecondary">Twój portal szachowy</h1>
+				<div class="navbar-header">
+					<a class="headmain" href="../index.html">Szachista.pl</a>
 				</div>
 				
-			</div>
-		</header>	
+				<a href="javascript:void(0);" class="hamburger" onclick="myHamburger()">
+					<i class="fa fa-bars"></i>
+				</a>
 
+				<ul class="nav navbar-nav navbar-right nav-mobile" id="nav">			
+					<li><a href=#>Szachy</a>
+						<ul>
+							<li><a href=#>Historia szachów</a></li>	
+							<li><a href=#>Reguły gry</a></li>
+							<li><a href=#>Bierki</a></li>	
+							<li><a href="galeria.html">Galeria zad 8</a></li>
+							<li><a href="z9.html">Zadanie 9</a></li>
+						</ul>
+					</li>
+
+					<li><a href=#>Otwarcia szachowe</a>
+						<ul>
+							<li><a href=#>Rozwój figur</a></li>								
+							<li><a href=#>Kontrola centrum</a></li>										
+							<li><a href=#>Bezpieczeństwo króla</a></li>										
+							<li><a href=#>Struktura pionów</a></li>
+						</ul>
+					</li>
+
+					<li><a href=#>Debiuty</a>
+						<ul>
+							<li><a href=#>Otwarte</a></li>									
+							<li><a href=#>Półotwarte</a></li>										
+							<li><a href=#>Zamknięte</a></li>
+						</ul>
+					</li>
+
+					<li><a href="mistrzowie.html">Mistrzowie świata</a></li>
+
+					<li><a href=#>Szachy online</a>
+						<ul>
+							<li><a target="_blank" href="https://www.chess.com/">Chess.com</a></li>										
+							<li><a target="_blank" href="https://lichess.org/">lichess.org</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+
+		<script>
+			function myHamburger() {
+				var x = document.getElementById("nav");
+				if (x.style.display === "block") {
+    				x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
+			}
+		</script>
+	
 
 
 		<div class="content">
-			<div class="flex-container flex-s-container flex-m-container">
-				<nav class="navigation">
-					
-					<ul class="flex-nav flex-s-container flex-m-container">
-
-						<div class="flex-item-center width-s-100">
-							<li><a href=#>Szachy</a>
-								<ul>
-									<li><a href=#>Historia szachów</a></li>	
-									<li><a href=#>Reguły gry</a></li>
-									<li><a href=#>Bierki</a></li>	
-									<li><a href="galeria.html">Galeria</a></li>
-								</ul>
-							</li>
-						</div>
-								
-						<div class="flex-item-center width-s-100">
-							<li><a href=#>Otwarcia szachowe</a>
-								<ul>
-									<li><a href=#>Rozwój figur</a></li>								
-									<li><a href=#>Kontrola centrum</a></li>										
-									<li><a href=#>Bezpieczeństwo króla</a></li>										
-									<li><a href=#>Struktura pionów</a></li>
-								</ul>
-							</li>
-						</div>
-
-						<div class="flex-item-center width-s-100">
-							<li><a href=#>Debiuty</a>
-								<ul>
-									<li><a href=#>Otwarte</a></li>									
-									<li><a href=#>Półotwarte</a></li>										
-									<li><a href=#>Zamknięte</a></li>
-								</ul>
-							</li>
-						</div>
-
-						<div class="flex-item-center width-s-100">	
-							<li><a href="mistrzowie.html">Mistrzowie świata</a></li>
-						</div>	
-						
-						<div class="flex-item-center width-s-100">
-							<li><a href=#>Szachy online</a>
-								<ul>
-									<li><a target="_blank" href="https://www.chess.com/">Chess.com</a></li>										
-									<li><a target="_blank" href="https://lichess.org/">lichess.org</a></li>
-								</ul>
-							</li>
-						</div>	
-					</ul>
-
-				</nav>
-			</div>
-
-
 		
         <!-- GALERIA NA FLEXBOXACH -->
 			<section class="flex-gallery">

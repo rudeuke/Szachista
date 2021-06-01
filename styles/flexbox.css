@@ -5,6 +5,10 @@
     flex-wrap: nowrap;
 }
 
+.flex-padding{
+    padding: 0 10%;
+}
+
 .flex-gallery{
     display: flex;
     flex-wrap: wrap;
@@ -71,13 +75,13 @@
 }
 
 
-@media (max-width: 1200px){
+@media (max-width: 1199px){
     .flex-m-container{
         flex-wrap: wrap;
     }
 }
 
-@media (max-width: 760px){
+@media (max-width: 767px){
     .flex-s-container{
         flex-direction: column;
     }
