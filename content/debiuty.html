@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<title>Szachista.pl</title>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../styles/flexbox.css">
+		<link rel="stylesheet" type="text/css" href="../styles/grid.css">
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../styles/navigation.css">
+		<link rel="stylesheet" type="text/css" href="../styles/scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../styles/socials.css">
+		<link rel="stylesheet" type="text/css" href="../styles/bootstrap_override.css">
+	</head>
+
+
+	<body>
+	
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+
+				<div class="navbar-header">
+					<a class="headmain" href="../index.html">Szachista.pl</a>
+				</div>
+				
+				<a href="javascript:void(0);" class="hamburger" onclick="myHamburger()">
+					<i class="fa fa-bars"></i>
+				</a>
+
+				<ul class="nav navbar-nav navbar-right nav-mobile" id="nav">			
+					<li><a href=#>Szachy</a>
+						<ul>
+							<li><a href="historia.html">Historia szachów</a></li>	
+							<li><a href="reguly.html">Podstawowe reguły</a></li>
+							<li><a href="bierki.html">Bierki</a></li>	
+							<li><a href="galeria.html">Galeria zad 8</a></li>
+							<li><a href="z9.html">Zadanie 9</a></li>
+						</ul>
+					</li>
+
+					<li><a href=#>Otwarcia szachowe</a>
+						<ul>
+							<li><a href="otwarcia.html#rozwoj_figur">Rozwój figur</a></li>								
+							<li><a href="otwarcia.html#kontrola_centrum">Kontrola centrum</a></li>										
+							<li><a href="otwarcia.html#bezpieczenstwo_krola">Bezpieczeństwo króla</a></li>										
+							<li><a href="otwarcia.html#struktura_pionow">Struktura pionów</a></li>
+						</ul>
+					</li>
+
+					<li><a href=#>Rodzaje debiutów</a>
+						<ul>
+							<li><a href="debiuty.html#otwarte">Otwarte</a></li>									
+							<li><a href="debiuty.html#polotwarte">Półotwarte</a></li>										
+							<li><a href="debiuty.html#zamkniete">Zamknięte</a></li>
+						</ul>
+					</li>
+
+					<li><a href="mistrzowie.html">Mistrzowie świata</a></li>
+
+					<li><a href=#>Szachy online</a>
+						<ul>
+							<li><a target="_blank" href="https://www.chess.com/">Chess.com</a></li>										
+							<li><a target="_blank" href="https://lichess.org/">lichess.org</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+
+		<script>
+			function myHamburger() {
+				var x = document.getElementById("nav");
+				if (x.style.display === "block") {
+    				x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
+			}
+		</script>
+
+
+		
+		<div class="content">
+
+            <h1><b>Rodzaje debiutów</b></h1>
+
+            <div class="flex-container flex-padding">					
+				<p class="text-justify">
+					Tradycyjny podział otwarć szachowych rozróżnia debiuty otwarte, półotwarte i zamknięte w zależności od pierwszego posunięcia. Te nazwy rodzajów debiutów są nieco mylące, ponieważ sugerują, że w niektórych debiutach szybko dochodzi do otwarcia pozycji, w innych pozycja długo pozostaje zamknięta (otwarta pozycja charakteryzuje się brakiem pionów w centrum i otwartymi do ataku kolumnami). O ile to stwierdzenie jest prawdziwe, o tyle nie przystaje do tradycyjnego podziału debiutów.
+				</p>
+			</div>
+
+            <br>
+
+            <div class="flex-container flex-padding">					
+				<p class="text-justify">
+					W wielu wariantach debiutów otwartych nie dochodzi do szybkiego otwarcia pozycji. I odwrotnie, niektóre warianty debiutów zamkniętych charakteryzują się szybkim otwarciem pozycji. Przykładowo, w obronie skandynawskiej, która nominalnie należy do debiutów półotwartych, czarne od pierwszego posunięcia dążą do otwarcia pozycji. Należy zatem nazwy rodzajów debiutów traktować umownie.
+                </p>
+			</div>
+
+			<br>
+
+			<div class="flex-container flex-padding">					
+				<p class="text-justify">
+					Ze względu na rosnącą liczbę znanych wariantów tradycyjny podział otwarć jest niewystarczający do precyzyjnego ich usystematyzowania. Encyklopedia otwarć szachowych wprowadziła inny, bardziej precyzyjny sposób kodowania rodzajów debiutów. Trudności w kodyfikacji otwarć szachowych sprawia fakt, że czasami do tej samej pozycji na szachownicy dochodzi się poprzez zastosowanie różnej kolejności posunięć. Taka sytuacja nazywana jest <b>transpozycją otwarcia</b>.
+				</p>
+			</div>
+
+
+            <br id="otwarte"><br>
+
+            <h3 class="text-center"><b>Debiuty otwarte</b></h3>
+			<div class="flex-container flex-padding">					
+				<p class="text-justify">
+					Otwartymi nazywamy wszystkie debiuty, w których białe zaczynają ruchem 1.e4 a czarne odpowiadają symetrycznym ruchem 1...e5. Wśród debiutów otwartych są klasyczne otwarcia:
+				</p>
+			</div>
+
+			<!-- flex-nav works well here -->
+			<div class="flex-nav flex-s-container flex-padding">
+				
+				<figure class="figure padding-3">
+					<img src="../images/openings/partia-hiszpanska.jpg" class="figure-img  img-thumbnail" alt="Partia hiszpańska">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Partia_hiszpa%C5%84ska">partia hiszpańska</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/partia-wloska.jpg" class="figure-img  img-thumbnail" alt="Partia włoska">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Partia_w%C5%82oska">partia włoska</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/gambit-krolewski.jpg" class="figure-img img-thumbnail" alt="Gambit królewski">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Gambit_kr%C3%B3lewski">gambit królewski</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/obrona-dwoch-skoczkow.jpg" class="figure-img img-thumbnail" alt="Obrona dwóch skoczków">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Obrona_dw%C3%B3ch_skoczk%C3%B3w">obrona dwóch skoczków</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/obrona-rosyjska.jpg" class="figure-img img-thumbnail" alt="Obrona rosyjska">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Obrona_rosyjska">obrona rosyjska</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/partia-szkocka.jpg" class="figure-img img-thumbnail" alt="Partia szkocka">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Partia_szkocka">partia szkocka</a></figcaption>
+				</figure>
+				
+				<figure class="figure padding-3">
+					<img src="../images/openings/partia-wiedenska.jpg" class="figure-img img-thumbnail" alt="Partia wiedeńska">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Partia_wiede%C5%84ska">partia wiedeńska</a></figcaption>
+				</figure>
+
+			</div>
+
+
+			<br id="polotwarte"><br>
+
+            <h3 class="text-center"><b>Debiuty półotwarte</b></h3>
+			<div class="flex-container flex-padding">					
+				<p class="text-justify">
+					Debiuty, w których po ruchu białych 1.e4 następuje inna niż 1...e5 odpowiedź czarnych noszą nazwę półotwartych. Najbardziej popularne debiuty półotwarte:
+				</p>
+			</div>
+
+			<div class="flex-nav flex-s-container flex-padding">
+				
+				<figure class="figure padding-3">
+					<img src="../images/openings/obrona-sycylijska.jpg" class="figure-img  img-thumbnail" alt="Obrona sycylijska">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Obrona_sycylijska">obrona sycylijska</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/obrona-francuska.jpg" class="figure-img  img-thumbnail" alt="Obrona francuska">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Obrona_francuska">obrona francuska</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/obrona-caro-kann.jpg" class="figure-img img-thumbnail" alt="Obrona Caro-Kann">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Obrona_Caro-Kann">obrona Caro-Kann</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/obrona-skandynawska.jpg" class="figure-img img-thumbnail" alt="Obrona skandynawska">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Obrona_skandynawska">obrona skandynawska</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/obrona-alechina.jpg" class="figure-img img-thumbnail" alt="Obrona Alechina">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Obrona_Alechina">obrona Alechina</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/obrona-pirca.jpg" class="figure-img img-thumbnail" alt="Obrona Pirca">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Obrona_Pirca">obrona Pirca</a></figcaption>
+				</figure>
+				
+				<figure class="figure padding-3">
+					<img src="../images/openings/debiut-nimzowitscha.jpg" class="figure-img img-thumbnail" alt="Debiut Nimzowitscha">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Debiut_Nimzowitscha">debiut Nimzowitscha</a></figcaption>
+				</figure>
+
+			</div>
+
+
+			<br id="zamkniete"><br>
+
+            <h3 class="text-center"><b>Debiuty zamkniete</b></h3>
+			<div class="flex-container flex-padding">					
+				<p class="text-justify">
+					Debiuty zamknięte charakteryzują się innym niż 1.e4 pierwszym ruchem białych. Debiuty zamknięte to, między innymi:
+				</p>
+			</div>
+
+			<div class="flex-nav flex-s-container flex-padding">
+				
+				<figure class="figure padding-3">
+					<img src="../images/openings/gambit-hetmanski.jpg" class="figure-img  img-thumbnail" alt="Gambit hetmański">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Gambit_hetma%C5%84ski">gambit hetmański</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/obrona-krolewsko-indyjska.jpg" class="figure-img  img-thumbnail" alt="Obrona królewsko-indyjska">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Obrona_kr%C3%B3lewsko-indyjska">obrona królewsko-indyjska</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/obrona-hetmansko-indyjska.jpg" class="figure-img img-thumbnail" alt="Obrona hetmańsko-indyjska">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Obrona_hetma%C5%84sko-indyjska">obrona hetmańsko-indyjska</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/partia-angielska.jpg" class="figure-img img-thumbnail" alt="Partia angielska">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Partia_angielska">partia angielska</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/obrona-nimzowitscha.jpg" class="figure-img img-thumbnail" alt="Obrona Nimzowitscha">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Obrona_Nimzowitscha">obrona Nimzowitscha</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/obrona-holenderska.jpg" class="figure-img img-thumbnail" alt="Obrona holenderska">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Obrona_holenderska">obrona holenderska</a></figcaption>
+				</figure>
+				
+				<figure class="figure padding-3">
+					<img src="../images/openings/partia-katalonska.jpg" class="figure-img img-thumbnail" alt="Partia katalońska">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Partia_katalo%C5%84ska">partia katalońska</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/obrona-grunfelda.jpg" class="figure-img img-thumbnail" alt="Obrona Grünfelda">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Obrona_Gr%C3%BCnfelda">obrona Grünfelda</a></figcaption>
+				</figure>
+
+				<figure class="figure padding-3">
+					<img src="../images/openings/otwarcie-retiego.jpg" class="figure-img img-thumbnail" alt="Otwarcie Rétiego">
+					<figcaption class="figure-caption text-center"><a href="https://pl.wikipedia.org/wiki/Otwarcie_R%C3%A9tiego">otwarcie Rétiego</a></figcaption>
+				</figure>
+
+			</div>
+
+            <br>
+		</div>
+						
+			
+			
+		<footer class="footer">
+			<section class="social more more-s">
+				<div class="flex-container flex-s-container">
+					
+					<div class="flex-grow-1 flex-item-center">
+
+						<div>
+							Kliknij po więcej!
+						</div>
+
+					</div>
+
+					<div class="flex-grow-2 flex-item-center flex-spacing-even">
+
+						<div>
+							<button class="icon-btn twitch">
+								<a href="https://www.twitch.tv/chess">
+									<i class="fa fa-twitch"></i>
+								</a>
+							</button>
+						</div>
+							
+						<div>
+							<button class="icon-btn youtube">
+								<a href="https://www.youtube.com/chess">
+									<i class="fa fa-youtube"></i>
+								</a>							
+							</button>
+						</div>
+		
+						<div>
+							<button class="icon-btn twitter">
+								<a href="https://twitter.com/chesscom">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</button>
+						</div>
+
+						<div>
+							<button class="icon-btn facebook">
+								<a href="https://www.facebook.com/chess/">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</button>
+						</div>
+							
+						<div>
+							<button class="icon-btn instagram">
+								<a href="https://www.instagram.com/wwwchesscom/">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</button>
+						</div>
+
+					</div>
+
+					<div class="flex-grow-1 flex-item-center">
+
+						<div>
+							Odwiedź chess.com
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+		</footer>
+	
+		
+	</body>
+
+</html>

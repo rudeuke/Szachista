@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<title>Szachista.pl</title>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../styles/flexbox.css">
+		<link rel="stylesheet" type="text/css" href="../styles/grid.css">
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../styles/navigation.css">
+		<link rel="stylesheet" type="text/css" href="../styles/scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../styles/socials.css">
+		<link rel="stylesheet" type="text/css" href="../styles/bootstrap_override.css">
+	</head>
+
+
+	<body>
+	
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+
+				<div class="navbar-header">
+					<a class="headmain" href="../index.html">Szachista.pl</a>
+				</div>
+				
+				<a href="javascript:void(0);" class="hamburger" onclick="myHamburger()">
+					<i class="fa fa-bars"></i>
+				</a>
+
+				<ul class="nav navbar-nav navbar-right nav-mobile" id="nav">			
+					<li><a href=#>Szachy</a>
+						<ul>
+							<li><a href="historia.html">Historia szachów</a></li>	
+							<li><a href="reguly.html">Podstawowe reguły</a></li>
+							<li><a href="bierki.html">Bierki</a></li>	
+							<li><a href="galeria.html">Galeria zad 8</a></li>
+							<li><a href="z9.html">Zadanie 9</a></li>
+						</ul>
+					</li>
+
+					<li><a href=#>Otwarcia szachowe</a>
+						<ul>
+							<li><a href="otwarcia.html#rozwoj_figur">Rozwój figur</a></li>								
+							<li><a href="otwarcia.html#kontrola_centrum">Kontrola centrum</a></li>										
+							<li><a href="otwarcia.html#bezpieczenstwo_krola">Bezpieczeństwo króla</a></li>										
+							<li><a href="otwarcia.html#struktura_pionow">Struktura pionów</a></li>
+						</ul>
+					</li>
+
+					<li><a href=#>Rodzaje debiutów</a>
+						<ul>
+							<li><a href="debiuty.html#otwarte">Otwarte</a></li>									
+							<li><a href="debiuty.html#polotwarte">Półotwarte</a></li>										
+							<li><a href="debiuty.html#zamkniete">Zamknięte</a></li>
+						</ul>
+					</li>
+
+					<li><a href="mistrzowie.html">Mistrzowie świata</a></li>
+
+					<li><a href=#>Szachy online</a>
+						<ul>
+							<li><a target="_blank" href="https://www.chess.com/">Chess.com</a></li>										
+							<li><a target="_blank" href="https://lichess.org/">lichess.org</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+
+		<script>
+			function myHamburger() {
+				var x = document.getElementById("nav");
+				if (x.style.display === "block") {
+    				x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
+			}
+		</script>
+
+
+		
+		<div class="content">
+
+            <h1><b>Otwarcia szachowe</b></h1>
+
+            <div class="flex-container flex-padding">					
+				<p class="text-justify">
+                    Otwarcie szachowe to początkowa faza partii szachów, zwana również <b>debiutem</b>. W większości szachowych partii można wyróżnić jej trzy fazy: otwarcie (debiut), grę środkową i końcową. Zazwyczaj trudno jest jednoznacznie określić, kiedy kończy się otwarcie, a zaczyna gra środkowa. Można przyjąć w uproszczeniu, że otwarcie to kilkanaście lub dwadzieścia kilka pierwszych posunięć w partii.
+                </p>
+			</div>
+
+            <br>
+
+            <div class="flex-container flex-padding">					
+				<p class="text-justify">
+                    Pomimo wielkiej różnorodności sposobów rozgrywania otwarć główne cele początkowej fazy gry pozostają wspólne dla różnych wariantów. Oczywiście, celem zasadniczym, podobnie jak w każdej fazie gry, jest niedopuszczenie do zamatowania własnego króla i unikanie strat materialnych. Zakładając jednak, że szachiści nie popełniają podstawowych błędów skutkujących zbyt szybkim zakończeniem partii, można wyszczególnić cztery zasadnicze cele, do realizacji których powinni oni dążyć rozgrywając otwarcie.
+                </p>
+			</div>
+
+            <br id="rozwoj_figur"><br>
+
+            <h3 class="text-center"><b>Szybki rozwój figur</b></h3>
+            <div class="flex-container flex-padding flex-m-container">
+                <div class="flex-item-center flex-item-15">
+					<div class="padding-horizontal-10 padding-vertical-5">
+                        <figure class="figure">
+                            <img src="../images/developing-pieces.gif" class="figure-img img-fluid rounded" alt="Rozwój figur">
+                            <figcaption class="figure-caption text-right">Przykładowy rozwój figur</figcaption>
+                        </figure>
+					</div>
+				</div>
+
+				<div class="flex-item-center flex-item-85">
+                    <p class="text-justify">
+                        W początkowej pozycji figury są schowane za pionami i mają bardzo ograniczone możliwości działania. Zasadniczo wszystkie figury są relatywnie silniejsze, gdy mogą operować w centrum szachownicy, zatem w początkowej fazie partii należy je jak najszybciej wyprowadzić z pierwszej (ósmej) linii. Nazywa się to rozwijaniem figur. W pierwszej kolejności do walki wkraczają lekkie figury, czyli skoczki i gońce. Skoczki najczęściej rozwija się na pola f3 i c3 (f6 i c6), rzadziej na d2 i e2 (d7, e7). W celu uwolnienia gońców należy wykonać posunięcia pionami e i d. Alternatywnie gońce można rozwijać na główne przekątne, np. po ruchu pionem g3, białopolowy goniec zajmuje pole g2. Ten manewr nazywa się <i>fianchetto</i>.
+                    </p>
+				</div>
+			</div>
+
+            <br id="kontrola_centrum"><br>
+
+            <h3 class="text-center"><b>Kontrola centrum</b></h3>
+            <div class="flex-container flex-padding">					
+				<p class="text-justify">
+                    Od pierwszych posunięć w partii trwa zażarta walka między stronami o dominację w centrum szachownicy. Przewaga w centrum pozwala umieszczać tam swoje figury lub przemieszczać swobodnie figury po całej szachownicy. Ustawienie własnych pionów w centrum krępuje siły przeciwnika i ogranicza mobilność jego figur, zatem w debiucie dąży się do ustawienia pionów na polach e4 i d4 (czarnych pionów na e5 i d5) i wsparcia ich figurami, by mogły utrzymać swoje pozycje. Jest to cel tzw. klasycznych otwarć.
+                </p>
+			</div>
+
+            <br>
+
+            <div class="flex-container flex-padding">					
+				<p class="text-justify">
+                    Alternatywnie można pozwolić przeciwnikowi na zajęcie centralnych pól i atakować je figurami, by rozbić centrum przeciwnika i dopiero wówczas opanować je własnymi pionami. Tę koncepcję zaproponowali <i>hipermoderniści</i>. Prowadzi ona do nowoczesnych otwarć, takich jak obrona Alechina: 1.e4 Sf6 2.e5 Sd5 3.d4 d6 4.c4 Sb6 5.f4. Białe chwilowo mają ogromną przewagę w centrum, jednak czarne mają nadzieję rozbić strukturę pionów w centrum i wykorzystać wyeksponowaną pozycję białych pionów.
+                </p>
+			</div>
+
+            <br id="bezpieczenstwo_krola"><br>
+
+            <h3 class="text-center"><b>Bezpieczeństwo króla</b></h3>
+            <div class="flex-container flex-padding">					
+				<p class="text-justify">
+                    Początkowa pozycja króla na środku pierwszej (ósmej) linii jest wyeksponowana na ataki przeciwnika, zwłaszcza po wysłaniu pionów d i e do walki o centrum. W ogromnej większości otwarć dąży się do wykonania <b>roszady</b>, która umieszcza króla w bezpieczniejszym miejscu, schowanego na skrzydle za pionami i bronionego przez wieżę (czasami dodatkowo przez gońca). Roszada ma dodatkową zaletę – umożliwia szybkie rozwinięcie wieży i połączenie wież na pierwszej (ósmej) linii.
+                </p>
+			</div>
+
+            <br id="struktura_pionow"><br>
+
+            <h3 class="text-center"><b>Prawidłowa struktura pionów</b></h3>
+            <div class="flex-container flex-padding flex-m-container">
+                <div class="flex-item-center flex-item-85">
+                    <p class="text-justify">
+                        Opisane powyżej trzy cele debiutu stanowią elementarną podstawę wiedzy o otwarciach szachowych. Szachiści o pozycyjnym stylu gry eksponują czwarty aspekt otwarcia – zachowanie prawidłowej struktury własnych pionów. W debiucie należy unikać powstawania pozycyjnych słabości w rodzaju zdwojonych pionów w jednej kolumnie, izolowanych pionów (takich, które nie mają przyjacielskich pionów w sąsiednich kolumnach) lub odstałych pionów (osamotnionych pionów, których sąsiedzi zawędrowali zbyt daleko do przodu). Nie zawsze jednak musi być to słabość. W niektórych debiutach celowo zdwaja się piony aby otworzyć linię dla wieży. Czasem nie powinno się też brać "darmowych" pionów, właśnie ze względu na otwarcie linii.
+                    </p>
+				</div>
+
+                <div class="flex-item-center flex-item-15">
+					<div class="padding-horizontal-10 padding-vertical-5">
+                        <figure class="figure">
+                            <img src="../images/pawn-structure.png" class="figure-img img-fluid rounded" alt="Struktura pionów">
+                            <figcaption class="figure-caption text-right">Silna struktura pionów</figcaption>
+                        </figure>
+					</div>
+				</div>
+			</div>
+
+            <br>
+
+            <div class="flex-container flex-padding">					
+				<p class="text-justify">
+                    Wiele otwarć bazuje na idei wczesnego osłabienia struktury pionów przeciwnika. Przykładowo, w wariancie Winawera w obronie francuskiej (1.e4 e6 2.d4 d5 3.Sc3 Gb4 4.e5 c5 5.a3 Gxc3 6.b:c3) czarne dobrowolnie wymieniają swego gońca na skoczka (para gońców przy równowadze materialnej daje pewną przewagę w grze końcowej) oraz oddają białym nieco przestrzeni w zamian za stworzenie istotnych słabości w ich strukturze pionowej.
+                </p>
+			</div>
+
+            <br>
+		</div>
+						
+			
+			
+		<footer class="footer">
+			<section class="social more more-s">
+				<div class="flex-container flex-s-container">
+					
+					<div class="flex-grow-1 flex-item-center">
+
+						<div>
+							Kliknij po więcej!
+						</div>
+
+					</div>
+
+					<div class="flex-grow-2 flex-item-center flex-spacing-even">
+
+						<div>
+							<button class="icon-btn twitch">
+								<a href="https://www.twitch.tv/chess">
+									<i class="fa fa-twitch"></i>
+								</a>
+							</button>
+						</div>
+							
+						<div>
+							<button class="icon-btn youtube">
+								<a href="https://www.youtube.com/chess">
+									<i class="fa fa-youtube"></i>
+								</a>							
+							</button>
+						</div>
+		
+						<div>
+							<button class="icon-btn twitter">
+								<a href="https://twitter.com/chesscom">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</button>
+						</div>
+
+						<div>
+							<button class="icon-btn facebook">
+								<a href="https://www.facebook.com/chess/">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</button>
+						</div>
+							
+						<div>
+							<button class="icon-btn instagram">
+								<a href="https://www.instagram.com/wwwchesscom/">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</button>
+						</div>
+
+					</div>
+
+					<div class="flex-grow-1 flex-item-center">
+
+						<div>
+							Odwiedź chess.com
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+		</footer>
+	
+		
+	</body>
+
+</html>

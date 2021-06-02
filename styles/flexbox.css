@@ -9,8 +9,13 @@
     padding: 0 10%;
 }
 
+.flex-margin{
+    margin: 5px;
+}
+
 .flex-gallery{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -70,6 +75,10 @@
     flex: 70%;
 }
 
+.flex-item-80{
+    flex: 80%;
+}
+
 .flex-item-85{
     flex: 85%;
 }
@@ -84,5 +93,9 @@
 @media (max-width: 767px){
     .flex-s-container{
         flex-direction: column;
+    }
+    
+    img{
+        width: auto;
     }
 }

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<title>Szachista.pl</title>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../styles/flexbox.css">
+		<link rel="stylesheet" type="text/css" href="../styles/grid.css">
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../styles/navigation.css">
+		<link rel="stylesheet" type="text/css" href="../styles/scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../styles/socials.css">
+		<link rel="stylesheet" type="text/css" href="../styles/bootstrap_override.css">
+	</head>
+
+
+	<body>
+	
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+
+				<div class="navbar-header">
+					<a class="headmain" href="../index.html">Szachista.pl</a>
+				</div>
+				
+				<a href="javascript:void(0);" class="hamburger" onclick="myHamburger()">
+					<i class="fa fa-bars"></i>
+				</a>
+
+				<ul class="nav navbar-nav navbar-right nav-mobile" id="nav">			
+					<li><a href=#>Szachy</a>
+						<ul>
+							<li><a href="historia.html">Historia szachów</a></li>	
+							<li><a href="reguly.html">Podstawowe reguły</a></li>
+							<li><a href="bierki.html">Bierki</a></li>	
+							<li><a href="galeria.html">Galeria zad 8</a></li>
+							<li><a href="z9.html">Zadanie 9</a></li>
+						</ul>
+					</li>
+
+					<li><a href=#>Otwarcia szachowe</a>
+						<ul>
+							<li><a href="otwarcia.html#rozwoj_figur">Rozwój figur</a></li>								
+							<li><a href="otwarcia.html#kontrola_centrum">Kontrola centrum</a></li>										
+							<li><a href="otwarcia.html#bezpieczenstwo_krola">Bezpieczeństwo króla</a></li>										
+							<li><a href="otwarcia.html#struktura_pionow">Struktura pionów</a></li>
+						</ul>
+					</li>
+
+					<li><a href=#>Rodzaje debiutów</a>
+						<ul>
+							<li><a href="debiuty.html#otwarte">Otwarte</a></li>									
+							<li><a href="debiuty.html#polotwarte">Półotwarte</a></li>										
+							<li><a href="debiuty.html#zamkniete">Zamknięte</a></li>
+						</ul>
+					</li>
+
+					<li><a href="mistrzowie.html">Mistrzowie świata</a></li>
+
+					<li><a href=#>Szachy online</a>
+						<ul>
+							<li><a target="_blank" href="https://www.chess.com/">Chess.com</a></li>										
+							<li><a target="_blank" href="https://lichess.org/">lichess.org</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+
+		<script>
+			function myHamburger() {
+				var x = document.getElementById("nav");
+				if (x.style.display === "block") {
+    				x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
+			}
+		</script>
+
+
+		
+		<div class="content">
+
+            <h1><b>Reguły gry</b></h1>
+
+            <div class="flex-container flex-padding flex-m-container">
+                <div class="flex-item-center flex-item-20">
+					<div class="padding-horizontal-10 padding-vertical-5">
+                        <figure class="figure">
+                            <img src="../images/chess-starting.png" class="figure-img img-fluid rounded" alt="Pozycja początkowa">
+                            <figcaption class="figure-caption text-right">Pozycja początkowa</figcaption>
+                        </figure>
+					</div>
+				</div>
+
+				<div class="flex-item-center flex-item-80">
+					<p class="text-justify">
+                        Szachy to gra, w której udział biorą dwie osoby. Rozgrywa się ją na planszy nazywanej szachownicą, gdzie rozstawia się 32 bierki (sześciu rodzajów, w tym po 8 pionów i 8 figur, łącznie 16 dla każdego z graczy). Celem gry jest danie <b>mata</b>, tzn. zagrożenie królowi przeciwnika usunięciem z dalszej rozgrywki („zbiciem”), którego nie sposób uniknąć. Gry jednak rzadko kończą się matem – gracze często poddają się, jeśli uważają, że dalsza gra doprowadzi do ich ostatecznej porażki. Zasady przewidują kilka sposobów remisowego zakończenia gry.
+                    </p>
+				</div>
+			</div>
+
+            <br><br>
+
+            <h3 class="text-center"><b>Podstawowe ruchy</b></h3><br>
+            <div class="flex-container flex-padding flex-m-container">
+                <div class="flex-item-center flex-item-80">
+                    <p class="text-justify">
+                        Każda bierka porusza się na sobie właściwy sposób. Ruchy wykonuje się na wolne pola, wyjąwszy pola zajęte przez bierki przeciwnika. Z wyjątkiem skoczków bierki nie mogą przeskakiwać innych. Bicie bierki przeciwnika to ruch bierki na pole, na której stoi bierka przeciwnika (jedynym wyjątkiem jest en passant, bicie w przelocie), wówczas bierka atakująca zajmuje miejsce bierki zbijanej, która jest zdejmowana z szachownicy i nie bierze udziału w dalszej grze. Król może być szachowany, tzn. może być zagrożony zbiciem, lecz nie może być zbity.
+                    </p>
+                </div>
+
+                <div class="flex-item-center flex-item-20">
+					<div class="padding-horizontal-10 padding-vertical-5">
+                        <figure class="figure">
+                            <img src="../images/chess-movements.jpg" class="figure-img img-fluid rounded" alt="Ruchy bierek">
+                            <figcaption class="figure-caption text-right">Dozwolone ruchy bierek</figcaption>
+                        </figure>
+					</div>
+				</div>
+			</div>
+
+            <div class="flex-container flex-padding flex-m-container">		
+				<div class="flex-item-center flex-item-70">
+					<p class="text-justify">
+                        <ul class="text-left">
+                            <li><b>Król</b> może ruszać się o jedno pole w poziomie, pionie lub na ukos. Najwyżej raz w grze każdy z króli może wykonać specjalny ruch zwany <i>roszadą</i>.</li>
+                            <li><b>Wieża</b> porusza się o dowolną liczbę wolnych pól w poziomie i pionie; porusza się ona również podczas roszady.</li>
+                            <li><b>Goniec</b> może ruszać się o dowolną liczbę wolnych pól po przekątnych.</li>
+                            <li><b>Hetman</b> porusza się o dowolną liczbę wolnych pól w poziomie, pionie i na ukos (łączy w ten sposób w sobie ruchy wieży i gońca).</li>
+                            <li><b>Skoczek</b> rusza się na najbliższe pole nie znajdujące się w tym samym rzędzie, kolumnie lub przekątnej; innymi słowy poruszają się one o dwa pola na kształt wieży, a następnie jedno pole prostopadle do tego kierunku. Ruch skoczka nie jest blokowany przez inne bierki, tzn. „skacze” on na nowe pole. Ruchy skoczka opisuje się także porównując je do litery „L” lub cyfry „7” (lub dowolnej odbitej, w poziomie i pionie, ich postaci), przy czym wykonuje on dwa kroki w danym kierunku, 90° zwrot w jednym z kierunków i krok w nowo wybranych kierunku.</li>
+                            <li><b>Pion</b> ma najbardziej rozbudowane zasady poruszania się:
+                            <ul>
+                                <li>Pion może poruszyć się o jedno pole naprzód, o ile nie jest ono zajęte. Jeżeli nie wykonano danym pionem posunięcia, to w pierwszym ruchu ma on możliwość wykonania ruchu o dwa pola naprzód, o ile żadne z tych pól nie jest zajęte. Pion nie może ruszać się do tyłu.</li>
+                                <li>Piony są jedynymi bierkami, które biją inaczej niż się poruszają. Mogą one zbić wrogą bierkę, jeśli znajduje się ona na jednym z dwóch pól sąsiadujących w poziomie z polem przed nimi (tzn. z pól na ukos przed nimi), lecz nie mogą się tam ruszyć, jeśli pola te są wolne.</li>
+                            </ul>
+                            Piony mają również dwa szczególne posunięcia: <i>en passant</i> (bicie w przelocie) oraz <i>promocję</i>.</li>
+                        </ul>
+					</p>
+				</div>
+			</div>
+            
+            <br><br>
+
+            <div class="flex-padding">					
+				<p class="text-justify">
+                    <b>Roszada</b><br>
+                    Roszada składa się z wykonania posunięcia króla o dwa pola w stronę wieży, a następnie umieszczeniu wieży po drugiej stronie króla na polu z nim sąsiadującym. Roszada jest możliwa wyłącznie wtedy, gdy spełnione są wszystkie poniższe warunki:
+                    <ul class="text-left">
+                        <li>król jak i wieża biorąca udział w roszadzie nie wykonały jeszcze posunięcia;</li>
+                        <li>między królem a wieżą nie ma innych bierek;</li>
+                        <li>król nie może być szachowany, nie może przechodzić ani zakończyć ruchu na polu atakowanym przez bierkę przeciwnika;</li>
+                        <li>król oraz wieża muszą znajdować się w tym samym rzędzie.</li>
+                    </ul>
+                </p>
+			</div>
+
+            <br>
+
+            <div class="flex-container flex-padding flex-m-container">
+                <div class="flex-item-center flex-item-30">
+					<div class="padding-horizontal-10 padding-vertical-5">
+                        <figure class="figure">
+                            <img src="../images/en-passant.png" class="figure-img img-fluid rounded" alt="Bicie w przelocie">
+                            <figcaption class="figure-caption text-right">Bicie w przelocie</figcaption>
+                        </figure>
+					</div>
+				</div>
+
+                <div class="flex-item-center flex-item-70">
+                    <p class="text-justify">
+                        <b>Bicie w przelocie (En passant)</b><br>
+                        Jeśli gracz A wykona ruch pionem o dwa pola, zaś gracz B ma piona w piątym, patrząc z jego perspektywy, rzędzie i sąsiadującej kolumnie, to pion gracza B może zbić piona gracza A tak, jak gdyby wykonał on posunięcie o jedno pole. Bicie to można wykonać tylko w ruchu bezpośrednio po ruchu pionem o dwa pola. W przykładzie obok: jeśli biały pion wykona posunięcie z a2 na a4, to czarny pion na b4 może zbić go <i>en passant</i> (w przelocie) kończąc swe posunięcie na polu a3.
+                    </p>
+                </div>
+			</div>
+                        
+            <br><br>
+
+            <div class="flex-container flex-padding">
+				<p class="text-justify">
+                    <b>Promocja piona</b><br>
+                    Jeśli pion osiągnie ósmy rząd, to wówczas jest on <i>promowany</i> (zamieniany) na hetmana, wieżę, gońca lub skoczka tego samego koloru, przy czym wybór zależy od gracza (zwykle jest to hetman). Wybór nie ogranicza się do poprzednio zbitych bierek, stąd teoretycznie możliwe jest posiadanie przez gracza dziewięciu hetmanów albo dziesięciu wież, gońców albo skoczków (o ile tylko wszystkie piony będą promowane i żadna z figur danego rodzaju nie zostanie zbita). W przypadku braku potrzebnej bierki gracz powinien wezwać sędziego, aby ten ją dostarczył.
+                </p>
+			</div>
+
+            <br>
+		</div>
+						
+			
+			
+		<footer class="footer">
+			<section class="social more more-s">
+				<div class="flex-container flex-s-container">
+					
+					<div class="flex-grow-1 flex-item-center">
+
+						<div>
+							Kliknij po więcej!
+						</div>
+
+					</div>
+
+					<div class="flex-grow-2 flex-item-center flex-spacing-even">
+
+						<div>
+							<button class="icon-btn twitch">
+								<a href="https://www.twitch.tv/chess">
+									<i class="fa fa-twitch"></i>
+								</a>
+							</button>
+						</div>
+							
+						<div>
+							<button class="icon-btn youtube">
+								<a href="https://www.youtube.com/chess">
+									<i class="fa fa-youtube"></i>
+								</a>							
+							</button>
+						</div>
+		
+						<div>
+							<button class="icon-btn twitter">
+								<a href="https://twitter.com/chesscom">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</button>
+						</div>
+
+						<div>
+							<button class="icon-btn facebook">
+								<a href="https://www.facebook.com/chess/">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</button>
+						</div>
+							
+						<div>
+							<button class="icon-btn instagram">
+								<a href="https://www.instagram.com/wwwchesscom/">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</button>
+						</div>
+
+					</div>
+
+					<div class="flex-grow-1 flex-item-center">
+
+						<div>
+							Odwiedź chess.com
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+		</footer>
+	
+		
+	</body>
+
+</html>

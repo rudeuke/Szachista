@@ -6,7 +6,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../styles/flexbox.css">
-		<link rel="stylesheet" type="text/css" href="../styles/gallery.css">
 		<link rel="stylesheet" type="text/css" href="../styles/grid.css">
 		<link rel="stylesheet" type="text/css" href="../styles/main.css">
 		<link rel="stylesheet" type="text/css" href="../styles/navigation.css">
@@ -18,6 +17,7 @@
 
 	<body>
 	
+
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
 
@@ -80,43 +80,78 @@
 				}
 			}
 		</script>
-	
 
 
-		<div class="content">
 		
-        <!-- GALERIA NA FLEXBOXACH -->
-			<section class="flex-gallery">
+		<div class="content">
 
-                <div class="padding-vertical-5">
-                    <img src="../images/gallery/board.jpg">
-                </div>
+            <h1><b>Bierki</b></h1>
 
-                <div class="padding-vertical-5">
-                    <img src="../images/gallery/chess-warriors.jpg">
-                </div>
+            <div class="flex-container flex-padding flex-m-container">
+                <div class="flex-item-center flex-item-80">
+					<p class="text-justify">
+                        Przeciwnicy dysponują zestawami bierek w odmiennych kolorach. W skład każdego z nich wchodzi szesnaście bierek: król, hetman (potocznie zwany też damą, damką, królową lub królówką), dwa gońce (z niemieckiego nazywane czasami lauframi), dwa skoczki (zwane też popularnie końmi lub konikami), dwie wieże oraz osiem pionów.
+					</p>
+				</div>
 
-                <div class="padding-vertical-5">
-                    <img src="../images/gallery/jan-krzysztof-duda.jpg">
-                </div>
+                <div class="flex-item-center flex-item-20">
+					<div class="padding-horizontal-10 padding-vertical-5">
+                        <figure class="figure">
+                            <img src="../images/chess-pieces1.jpg" class="figure-img img-fluid rounded" alt="Bierki szachowe">
+                            <figcaption class="figure-caption text-right">Bierki szachowe</figcaption>
+                        </figure>
+					</div>
+				</div>
+			</div>
 
-                <div class="padding-vertical-5">
-                    <img src="../images/gallery/pawn-king.jpg">
-                </div>
+            <br><br>
 
-                <div class="padding-vertical-5">
-                    <img src="../images/gallery/starting-position.jpg">
-                </div>
+            <div class="flex-container flex-padding">					
+				<p class="text-justify">
+                    Jeśli jeden z graczy ma figury o sumarycznej wartości punktowej większej niż drugi, jest to podstawą do stwierdzenia, że ma przewagę materialną. Jednak nie zawsze musi ona przesądzać o wygranej – czasami decyduje tzw. <b>przewaga pozycyjna</b>. Debata nad wartością skoczków i gońców (dotycząca też kolorów pól, po których poruszają się gońce) również jest natury pozycyjnej i nie ma sensu bez odniesienia do konkretnej sytuacji na szachownicy. Z kolei dwie wieże mają przewagę nad hetmanem, mimo że gra tym ostatnim jest z reguły łatwiejsza.
+                </p>
+			</div>
 
-                <div class="padding-vertical-5">
-                    <img src="../images/gallery/white-king.jpg">
-                </div>
+            <br>
 
-            </section>
+            <div class="flex-padding">					
+				<p class="text-justify">
+                    Wartość figur szachowych może być absolutna lub względna. Przy założeniu, że wartość absolutna piona wynosi 1, wartości statyczne figur przedstawiają się następująco:
+                    <ul>
+                        <li>hetman – 9 (według niektórych autorów 9,5 lub 10) punktów</li>
+                        <li>wieża – 5 punktów</li>
+                        <li>skoczek lub goniec – 3 punkty</li>
+                        <li>król – nie ma przypisanej wartości ze względu na to, że nie można go wymienić, ale szacuje się jego siłę na 4–5 punktów.</li>
+                    </ul>
+                </p>
+			</div>
+
+            <div class="flex-container padding-vertical-5 flex-item-center">					
+				<figure class="figure">
+					<img src="../images/pieces-points.png" class="figure-img img-fluid rounded" alt="Wartości bierek">
+					<figcaption class="figure-caption text-right">Wartości punktowe bierek</figcaption>
+				</figure>
+			</div>
+            
+            <br><br>
+
+            <div class="flex-padding flex-m-container">		
+                <p class="text-justify">
+                    Wartości punktowe poszczególnych figur mają charakter umowny i zależą od konkretnej pozycji na szachownicy. Są jednak dobrą wskazówką dla początkujących szachistów, zwłaszcza przy podejmowaniu decyzji o wymianie figur. Wówczas w oparciu o wartości punktowe poszczególnych figur mogą oni stosować następujące reguły:
+                    <ul class="text-left">
+                        <li>Przy przewadze materialnej powinno dążyć się do uproszczenia pozycji (poprzez wymianę figur), sprowadzając grę do końcówki.</li>
+                        <li>Wartość punktowa pionka rośnie wraz ze zbliżaniem się do pola przemiany.</li>
+                        <li>Wartość skoczka zależy od charakteru pozycji: w zamkniętych pozycjach skoczek (3,4) ma przewagę nad gońcem (3), natomiast w otwartych pozycjach na odwrót (skoczek 1,7, goniec 3); wszystko zależy od konkretnego ustawienia figur na szachownicy.</li>
+                        <li>Siła bojowa króla rośnie wraz ze zmniejszaniem się liczby figur na szachownicy: jest on wtedy znacznie mniej narażony na atak matowy przeciwnika, dzięki czemu może stać się aktywną bierką.</li>
+                    </ul>
+                </p>
+            </div>
+            
+            <br>
 		</div>
 						
-
-
+			
+			
 		<footer class="footer">
 			<section class="social more more-s">
 				<div class="flex-container flex-s-container">
@@ -184,8 +219,7 @@
 				</div>
 			</section>
 		</footer>
-		
-		
+	
 		
 	</body>
 
