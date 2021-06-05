@@ -36,7 +36,7 @@ nav li{
 	width: 16vw;
 }
 
-ul ul{
+nav ul ul{
 	display: none;
 	background-color: #a39875;
 	z-index: 998;
@@ -104,7 +104,7 @@ nav li a:hover{
 		font-size: 150%;
 	}
 	
-	ul ul{
+	nav ul ul{
 		position: relative;
 		background-color: #ada385;
 	}
